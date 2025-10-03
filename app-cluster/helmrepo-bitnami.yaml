@@ -1,9 +1,9 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: OCIRepository
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
 metadata:
   name: mybitnami
-  namespace: flux-system
+  namespace: default
 spec:
-  interval: 3m0s
+  type: "oci"
+  interval: 5m0s
   url: oci://registry-1.docker.io/bitnamicharts/redis
