@@ -10,8 +10,8 @@ spec:
       chart: redis
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: HelmRepository
-        name: bitnami
+        kind: OCIRepository
+        name: ocibitnami
   values:
     usePassword: false
     cluster:
