@@ -8,6 +8,7 @@ spec:
   chartRef:
     kind: OCIRepository
     name: mybitnami
+    version: 22.x.x
   values:
     usePassword: false
     cluster:
