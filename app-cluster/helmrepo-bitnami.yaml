@@ -4,7 +4,7 @@ metadata:
   name: myocibitnami
   namespace: kube-system
 spec:
-  interval: 1h
+  interval: 1m
   layerSelector:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: copy
