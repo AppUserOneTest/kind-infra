@@ -9,7 +9,7 @@ spec:
   releaseName: nginx
   chartRef:
     kind: OCIRepository
-    name: myocijfrog
+    name: myocifrog
   values:
     usePassword: false
     cluster:

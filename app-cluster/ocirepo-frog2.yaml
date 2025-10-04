@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: myocifrog
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  provider: generic
+  ref:
+    tag: 0.1.0
+  secretRef:
+    name: acr
+  url: oci://trial2ersmt.jfrog.io/mytesthelmrepo-helmoci-local/my-helmapplication
