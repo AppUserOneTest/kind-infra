@@ -11,4 +11,4 @@ spec:
     operation: copy
   url: oci://registry-1.docker.io/bitnamicharts/redis
   ref:
-    semver: ">=22.0.0"
+    semver: ">=8.0.0"
