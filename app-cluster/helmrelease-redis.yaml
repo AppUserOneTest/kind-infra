@@ -5,15 +5,14 @@ metadata:
   name: redis
   namespace: flux-system
 spec:
+  interval: 1m
+  releaaseName: redis
   chartRef:
     kind: OCIRepository
-    name: mybitnami
-    version: 22.x.x
+    name: myocirepository
   values:
     usePassword: false
     cluster:
       enabled: false
-  interval: 5m0s
-  releaseName: redis
   storageNamespace: default
   targetNamespace: default
