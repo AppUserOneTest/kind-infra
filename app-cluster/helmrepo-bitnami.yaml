@@ -10,3 +10,5 @@ spec:
     mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
     operation: copy
   url: oci://registry-1.docker.io/bitnamicharts/redis
+  ref:
+    semver: ">=22.0.0"
