@@ -14,4 +14,4 @@ spec:
     semver: ">=0.x.x"
   provider: generic
   secretRef:
-    name: acr
+    name: regcred
