@@ -9,7 +9,7 @@ spec:
   releaaseName: redis
   chartRef:
     kind: OCIRepository
-    name: myocirepository
+    name: myocibitnami
   values:
     usePassword: false
     cluster:
