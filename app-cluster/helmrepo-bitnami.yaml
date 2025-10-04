@@ -1,9 +1,11 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
 metadata:
-  name: mybitnami
-  namespace: default
+  name: myocibitnami
+  namespace: kube-system
 spec:
-  type: "oci"
-  interval: 5m0s
+  interval: 1h
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: copy
   url: oci://registry-1.docker.io/bitnamicharts/redis
