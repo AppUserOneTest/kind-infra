@@ -12,3 +12,7 @@ spec:
   url: oci://trial2ersmt.jfrog.io/mytesthelmrepo-helmoci-local/my-helmapplication
   ref:
     semver: ">=0.x.x"
+  verify:
+    provider: cosign
+    secretRef:
+      name: acr
