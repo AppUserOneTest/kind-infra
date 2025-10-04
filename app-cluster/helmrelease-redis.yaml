@@ -14,5 +14,8 @@ spec:
     usePassword: false
     cluster:
       enabled: false
+    image:
+      repository: bitnamilegacy/redis
+      tag: "8.2.1-debian-12-r0"
   storageNamespace: default
   targetNamespace: default
