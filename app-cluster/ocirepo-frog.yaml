@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
+metadata:
+  name: myocifrog
+  namespace: flux-system
+spec:
+  interval: 1m
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: copy
+  url: oci://trial2ersmt.jfrog.io/mytesthelmrepo-helmoci-local/my-helmapplication
+  ref:
+    semver: ">=0.x.x"

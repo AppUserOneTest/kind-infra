@@ -1,0 +1,18 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  interval: 1m
+  releaseName: nginx
+  chartRef:
+    kind: OCIRepository
+    name: myocijfrog
+  values:
+    usePassword: false
+    cluster:
+      enabled: false
+  storageNamespace: default
+  targetNamespace: default
